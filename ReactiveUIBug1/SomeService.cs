@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Diagnostics;
 
 namespace ReactiveUIBug1
 {
@@ -8,13 +6,13 @@ namespace ReactiveUIBug1
     {
         public void DoStuff()
         {
-            Console.WriteLine("Crash");
-            Console.WriteLine("Crash");
-            Console.WriteLine("Crash");
-            Console.WriteLine("Crash");
-            Console.WriteLine("Crash");
-            Console.WriteLine("Crash");
-            Console.WriteLine("Crash");
+            Trace.WriteLine("Crash");
+            Trace.WriteLine("Crash1");
+            Trace.WriteLine("Crash2");
+            Trace.WriteLine("Crash3");
+            Trace.WriteLine("Crash4");
+            Trace.WriteLine("Crash5");
+            Trace.WriteLine("Crash6");
 
             var a = 99999;
         }
