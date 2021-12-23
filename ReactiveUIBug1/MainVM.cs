@@ -1,12 +1,9 @@
 ﻿using ReactiveUI;
-using System;
-using System.Collections.Generic;
 using System.Reactive;
-using System.Text;
 
 namespace ReactiveUIBug1
 {
-    public class MainVM
+    public class MainVM : ReactiveObject
     {
         SomeService someService = new SomeService();
 
